@@ -27,14 +27,5 @@
       "android",
       "electron"
     ]
-  },
-  "build": {
-    "fileAssociations": [
-      {
-        "ext": "xml",
-        "name": "xml File",
-        "role": "Editor"
-      }
-    ]
   }
 }

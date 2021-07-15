@@ -268,7 +268,7 @@ IDE_Morph.prototype.init = function (isAutoFill) {
     this.projectName = '';
     this.projectNotes = '';
 
-    this.logoURL = this.resourceURL('src', 'snap_logo_sm.png');
+    this.logoURL = this.resourceURL('.', 'snap_logo_sm.png');
     this.logo = null;
     this.controlBar = null;
     this.categories = null;
@@ -5216,7 +5216,7 @@ IDE_Morph.prototype.languageMenu = function () {
 
 IDE_Morph.prototype.setLanguage = function (lang, callback, noSave) {
     var translation = document.getElementById('language'),
-        src = this.resourceURL('app/assets/apps/snap/locale', 'lang-' + lang + '.js'),
+        src = this.resourceURL('Extras/locale', 'lang-' + lang + '.js'),
         myself = this;
     SnapTranslator.unload();
     if (translation) {
